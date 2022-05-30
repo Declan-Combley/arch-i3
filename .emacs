@@ -253,7 +253,6 @@
  'purescript-mode
  'nix-mode
  'dockerfile-mode
- 'love-minor-mode
  'toml-mode
  'nginx-mode
  'kotlin-mode
