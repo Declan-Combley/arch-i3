@@ -68,7 +68,7 @@ bindsym +Shift+Up move up
 bindsym +Shift+Right move right
 
 # split in horizontal orientation
-bindsym +h split h
+bindsym +o split h
 
 # split in vertical orientation
 bindsym +v split v
@@ -157,7 +157,6 @@ bar {
 }
 
 bindsym Mod1+F1 exec ~/bin/hhkb-i3
-bindsym +Shift+h exec ~/.screenlayout/home-setup.sh
 bindsym +Shift+p exec ~/.screenlayout/portable-setup.sh
 bindsym +Shift+w exec ~/bin/map-wacom
 bindsym +b exec boomer
@@ -166,4 +165,3 @@ bindsym --release +Shift+l exec slock
 focus_follows_mouse no
 
 hide_edge_borders both
-
