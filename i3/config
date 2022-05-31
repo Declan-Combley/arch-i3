@@ -157,8 +157,6 @@ bar {
 }
 
 bindsym Mod1+F1 exec "~/bin/hhkb-i3"
-bindsym $mod+Shift+h exec "~/.screenlayout/home-setup.sh"
-bindsym $mod+Shift+p exec "~/.screenlayout/portable-setup.sh"
 bindsym $mod+Shift+w exec "~/bin/map-wacom"
 bindsym $mod+b exec "boomer"
 bindsym --release $mod+Shift+l exec "slock"
