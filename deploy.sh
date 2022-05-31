@@ -4,11 +4,11 @@ yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs
 
 git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
 
-yay -S ttc-iosevka brave
+yes | yay -S ttc-iosevka 
 
 rm ~/.bashrc
 rm ~/.emacs
-rm -rf ~/.config/i3/
+sudo rm ~/.config/i3
 
 SCRIPT_DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
 
