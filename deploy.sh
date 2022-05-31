@@ -1,5 +1,11 @@
 #!/bin/sh
 
+yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs
+
+git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
+
+yay -S ttc-iosevka brave
+
 rm ~/.bashrc
 rm ~/.emacs
 rm -rf ~/.config/i3/
