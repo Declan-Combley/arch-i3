@@ -29,7 +29,7 @@ font pango:Iosevka 10
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Use Mouse+ to drag floating windows to their wanted position
-floating_modifier 
+floating_modifier $mod
 
 # start a terminal
 bindsym +Return exec i3-sensible-terminal
