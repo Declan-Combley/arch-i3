@@ -2,6 +2,7 @@
 .tmux.conf|symlink|
 .vimrc|symlink|
 i3|symlink|.config
+polybar|symlink|.config
 .screenlayout|symlink|
 .ghci|symlink|
 bin/hhkb-i3|symlink|
