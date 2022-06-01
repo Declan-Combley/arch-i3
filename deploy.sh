@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs
+yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar
 
 git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
 
@@ -8,7 +8,7 @@ yes | yay -S ttc-iosevka
 
 rm ~/.bashrc
 rm ~/.emacs
-sudo rm ~/.config/i3
+sudo rm -rf ~/.config/i3
 
 SCRIPT_DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
 
