@@ -1,5 +1,9 @@
 (package-initialize)
 
+;;; Open shell > C-x C-t
+;;; Close the window and buffer > C-x C-k
+;;; Dired mode > C-x d
+
 (load "~/.emacs.rc/rc.el")
 
 (load "~/.emacs.rc/misc-rc.el")
@@ -38,6 +42,10 @@
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+(global-set-key (kbd "C-x t") 'shell-command)
+
+(global-set-key (kbd "C-x C-k") 'kill-buffer-and-window)
 
 ;;; c-mode
 (setq-default c-basic-offset 4
@@ -118,6 +126,7 @@
 
 (setq magit-auto-revert-mode nil)
 
+(global-set-key (kbd "C-x C-m") 'magit)
 (global-set-key (kbd "C-c m s") 'magit-status)
 (global-set-key (kbd "C-c m l") 'magit-log)
 
@@ -136,7 +145,7 @@
 (setq dired-omit-files
       (concat dired-omit-files "\\|^\\..+$"))
 (setq-default dired-dwim-target t)
-(setq dired-listing-switches "-alh")
+(setq dired-listing-switches "-alh") 
 
 ;;; helm
 (rc/require 'helm 'helm-cmd-t 'helm-git-grep 'helm-ls-git)
@@ -333,3 +342,4 @@ compilation-error-regexp-alist-alist
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
