@@ -1,10 +1,12 @@
 #!/bin/sh
 
-yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar
+yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar picom
 
 git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
 
 yes | yay -S ttc-iosevka 
+
+yay -S picom-git
 
 rm ~/.bashrc
 rm ~/.emacs
