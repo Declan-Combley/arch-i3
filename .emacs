@@ -25,11 +25,6 @@
 (show-paren-mode 1)
 
 (rc/require-theme 'gruber-darker)
-;; (rc/require-theme 'zenburn)
-;; (load-theme 'adwaita t)
-
-(eval-after-load 'zenburn
-  (set-face-attribute 'line-number nil :inherit 'default))
 
 ;;; ido
 (rc/require 'smex 'ido-completing-read+)
@@ -125,15 +120,15 @@
 (rc/require 'magit)
 
 (setq magit-auto-revert-mode nil)
-
 (global-set-key (kbd "C-x C-m") 'magit)
+
 (global-set-key (kbd "C-c m s") 'magit-status)
 (global-set-key (kbd "C-c m l") 'magit-log)
 
 ;;; multiple cursors
 (rc/require 'multiple-cursors)
 
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-c C-s") 'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
 (global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
