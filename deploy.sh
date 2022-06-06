@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar picom
+yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar picom caja bluez bluez-utils pulseaudio-bluetooth
 
 git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
 
