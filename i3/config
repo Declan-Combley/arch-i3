@@ -126,6 +126,8 @@ bindsym $mod+b exec brave
 bindsym $mod+s exec spotify
 bindsym $mod+d exec discord
 bindsym $mod+c exec caja
+bindsym $mod+x exec i3-sensible-terminal -e bluetoothctl
+bindsym $mod+x exec i3-sensible-terminal -e iwctl
 
 bindsym --release $mod+Shift+l exec "slock"
 
