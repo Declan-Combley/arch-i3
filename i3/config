@@ -49,7 +49,6 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+n layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+t layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -128,6 +127,7 @@ bindsym $mod+d exec discord
 bindsym $mod+c exec caja
 bindsym $mod+x exec i3-sensible-terminal -e bluetoothctl
 bindsym $mod+i exec i3-sensible-terminal -e iwctl
+bindsym $mod+t exec i3-sensible-terminal -e btop
 
 bindsym --release $mod+Shift+l exec "slock"
 
