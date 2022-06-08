@@ -3,14 +3,13 @@
 git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
 
 yay -S picom-git
-yay -S nerd-fonts-iosevka
 yes | yay -S ttc-iosevka 
 
 yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar picom caja bluez bluez-utils pulseaudio-bluetooth unzip
 
-if [ -f ~/.bashrc ] ; then ; rm ~/.bashrc ; fi
-if [ -f ~/.emacs ] ; then ; rm ~/.emacs ; fi
-if [ -d ~/.config/i3/ ] ; then ; rm -rf ~/.config/i3/ ; fi
+rm ~/.bashrc
+rm ~/.emacs 
+rm -rf ~/.config/i3/ 
 
 SCRIPT_DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
 
