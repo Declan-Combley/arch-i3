@@ -1,12 +1,5 @@
 #!/bin/sh
 
-git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/yay-git/ && yes | makepkg -si)
-
-yay -S picom-git
-yes | yay -S ttc-iosevka 
-
-yes | sudo pacman -Syyu && yes | sudo pacman -S zsh tmux rxvt-unicode emacs polybar picom caja bluez bluez-utils pulseaudio-bluetooth unzip btop
-
 rm ~/.bashrc
 rm ~/.emacs 
 rm -rf ~/.config/i3/ 
