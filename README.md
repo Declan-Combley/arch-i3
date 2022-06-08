@@ -1,13 +1,17 @@
 # dotfiles #
 
-Sets up polybar, i3-gaps, emacs, bashrc etc ... For a clean arch and i3 install.
+Sets up polybar, i3-gaps, emacs, bashrc etc.
 
 # Requirements #
 
 * Git
-* Arch
+* If using arch i3-gaps must be installed
 * Internet connection
 
 # Deployment #
 
-Clone the repo somewhere and run `deploy.sh`.
+Clone the repo into your home directory and install your os dependencies via the os and run `deploy.sh`.
+
+# *WARNING* #
+
+The apt script is untestested and will most likely not work
