@@ -12,6 +12,8 @@ Sets up polybar, i3-gaps, emacs, bashrc etc.
 
 Clone the repo into your home directory and install your os dependencies via the os and run `deploy.sh`.
 
-# *WARNING* #
+<br>
 
-The apt script is untestested and will most likely not work
+### *WARNING* ###
+
+***The apt script is untestested and will most likely not work***
