@@ -136,8 +136,8 @@ focus_follows_mouse no
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id bash ~/.config/i3/autostart.sh
 
-#gaps inner 20
-#gaps outer 10
+gaps inner 20
+gaps outer 10
 #
 # Uncomment this for gaps if your using the i3-gaps fork
-#for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 0
