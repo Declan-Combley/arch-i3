@@ -14,11 +14,17 @@ bindsym $mod+q kill
 # start dmenu (a program launcher)
 bindsym $mod+p exec dmenu_run
 
-# change focus
+# qwerty
 bindsym $mod+h focus left  
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+
+# colemak keybindings
+#bindsym $mod+h focus left  
+#bindsym $mod+e focus down
+#bindsym $mod+i focus up
+#bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
