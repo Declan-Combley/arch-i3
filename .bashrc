@@ -90,7 +90,8 @@ fi
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls='ls -la --color=auto'
 alias off='shutdown now'
+alias bat='cat /sys/class/power_supply/BAT0/capacity'
 
 export PS1="[ \[$(tput sgr0)\]\[\033[38;5;215m\]\w\[$(tput sgr0)\] ] \[$(tput sgr0)\]\[\033[38;5;215m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
