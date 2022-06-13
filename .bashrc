@@ -90,7 +90,7 @@ fi
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls -la --color=auto'
+alias ls='ls --color=auto'
 alias off='shutdown now'
 alias bat='cat /sys/class/power_supply/BAT0/capacity'
 
