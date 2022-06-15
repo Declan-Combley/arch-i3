@@ -40,7 +40,7 @@
 
 (global-set-key (kbd "C-x C-k") 'kill-buffer-and-window)
 
-(global-set-key (kbd "C-x t") 'async-shell-command)
+(global-set-key (kbd "C-x t") 'shell-command)
 (global-set-key (kbd "M-o") 'compile)
 
 ;;; c-mode
