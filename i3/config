@@ -134,7 +134,6 @@ bindsym $mod+c exec caja
 bindsym $mod+x exec i3-sensible-terminal -e bluetoothctl
 bindsym $mod+i exec i3-sensible-terminal -e iwctl
 bindsym $mod+t exec i3-sensible-terminal -e btop
-bindsym $mod+Shift+q i3-sensible-terminal -e off
 
 bindsym --release $mod+Shift+l exec "slock"
 
