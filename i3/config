@@ -131,6 +131,7 @@ bindsym $mod+b exec brave
 bindsym $mod+s exec spotify
 bindsym $mod+d exec discord
 bindsym $mod+c exec caja
+bindsym $mod+o exec pavucontrol
 bindsym $mod+x exec i3-sensible-terminal -e bluetoothctl
 bindsym $mod+i exec i3-sensible-terminal -e iwctl
 bindsym $mod+t exec i3-sensible-terminal -e btop
