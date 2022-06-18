@@ -43,6 +43,20 @@
 (global-set-key (kbd "C-x t") 'shell-command)
 (global-set-key (kbd "M-o") 'compile)
 
+(defun split-and-follow-horizontally ()
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+(global-set-key (kbd "C-x |") 'split-and-follow-horizontally)
+
+(defun split-and-follow-vertically ()
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+(global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
+
 ;;; c-mode
 (setq-default c-basic-offset 4
               c-default-style '((java-mode . "java")
@@ -141,7 +155,7 @@
 (setq dired-omit-files
       (concat dired-omit-files "\\|^\\..+$"))
 (setq-default dired-dwim-target t)
-(setq dired-listing-switches "-alh") 
+(setq dired-listing-switches "-alh")
 
 ;;; helm
 (rc/require 'helm 'helm-cmd-t 'helm-git-grep 'helm-ls-git)
