@@ -2,7 +2,7 @@
 
 ;;; Open shell > C-x C-t
 ;;; Close the window and buffer > C-x C-k
-;;; Dired mode > C-x d
+;;; Open new window C-x 2
 
 (load "~/.emacs.rc/rc.el")
 
