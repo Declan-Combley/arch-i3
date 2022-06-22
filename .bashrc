@@ -91,7 +91,9 @@ fi
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
 alias off='shutdown now'
 alias bat='cat /sys/class/power_supply/BAT0/capacity'
+alias cat='~/dotfiles/.prog/cat'
 
 export PS1="[ \[$(tput sgr0)\]\[\033[38;5;215m\]\w\[$(tput sgr0)\] ] \[$(tput sgr0)\]\[\033[38;5;215m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
