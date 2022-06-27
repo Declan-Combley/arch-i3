@@ -96,5 +96,6 @@ alias off='shutdown now'
 alias bat='cat /sys/class/power_supply/BAT0/capacity'
 alias nat='~/dotfiles/.prog/cat'
 alias put='~/dotfiles/.prog/put'
+alias math='~/dotfiles/.prog/calculator'
 
 export PS1="[ \[$(tput sgr0)\]\[\033[38;5;215m\]\w\[$(tput sgr0)\] ] \[$(tput sgr0)\]\[\033[38;5;215m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
