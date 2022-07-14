@@ -99,3 +99,4 @@ alias put='~/dotfiles/.prog/put'
 alias math='rlwrap -n python3 ~/dotfiles/.prog/main.py'
 
 export PS1="[ \[$(tput sgr0)\]\[\033[38;5;215m\]\w\[$(tput sgr0)\] ] \[$(tput sgr0)\]\[\033[38;5;215m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+alias note='python3 ~/Code/note/main.py'
