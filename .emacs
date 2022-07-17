@@ -90,7 +90,7 @@
 ;;; Haskell mode
 (rc/require 'haskell-mode)
 
-(setq haskell-process-type 'cabal-new-repl)
+(setq haskell-process-type 'cabal-repl)
 (setq haskell-process-log t)
 
 (add-hook 'haskell-mode-hook 'haskell-indent-mode)
@@ -351,3 +351,5 @@ compilation-error-regexp-alist-alist
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'downcase-region 'disabled nil)
+(setq shell-command-switch "-ic")

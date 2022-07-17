@@ -1,0 +1,29 @@
+(Creating Topics)
+    To create a topic use a closing and opening parenthesis with whatever you want
+    eg this topic
+(end)
+
+(Note Syntax)
+    To make a note, quote, date, etc you must preceed it with a pipe, eg
+    - note | this is how you would create a note
+    - fact | this is how you woudl make a fact
+    - date | etc ..
+(end)
+
+(Actually Using The Notes)
+    If you want to get the entirety of the file run this command
+    - shell | python3 main.py filepath all
+    - note | this is the same as if you were catting out the file
+
+    You can get everything within a subtopic by using this command
+    - shell | python3 main.py filepath header_number
+
+    You can also pick the types of topics from the header that you want
+    - shell | python3 main.py filepath header_number - quotes, facts, notes, etc...
+(end)
+
+
+(Aliasing This Repo)
+    You can alias this by adding the path to your bashrc 
+    - shell | echo "alias note='python3 ./path/to/main.py'" >> .bashrc
+(end)
