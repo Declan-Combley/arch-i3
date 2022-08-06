@@ -1,9 +1,5 @@
 (package-initialize)
 
-;;; Open shell > C-x C-t
-;;; Close the window and buffer > C-x C-k
-;;; Open new window C-x 2
-
 (load "~/.emacs.rc/rc.el")
 
 (load "~/.emacs.rc/misc-rc.el")
@@ -62,9 +58,7 @@
                                 (awk-mode . "awk")
                                 (other . "bsd")))
 
-(add-hook 'c-mode-hook (lambda ()
-                         (interactive)
-                         (c-toggle-comment-style -1)))
+
 
 ;;; Paredit
 (rc/require 'paredit)
@@ -81,16 +75,14 @@
 (add-hook 'racket-mode-hook      'rc/turn-on-paredit)
 
 ;;; Emacs lisp
-(add-hook 'emacs-lisp-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "C-c C-j")
-                            (quote eval-print-last-sexp))))
+
 (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 
 ;;; Haskell mode
+(setq ghc-location "~/ghc")
 (rc/require 'haskell-mode)
 
-(setq haskell-process-type 'cabal-repl)
+(setq haskell-process-type 'ghci)
 (setq haskell-process-log t)
 
 (add-hook 'haskell-mode-hook 'haskell-indent-mode)
@@ -212,10 +204,7 @@
 
 (global-company-mode)
 
-(add-hook 'tuareg-mode-hook
-          (lambda ()
-            (interactive)
-            (company-mode 0)))
+
 
 ;;; Tide
 (rc/require 'tide)
@@ -228,20 +217,14 @@
 
 ;;; Proof general
 (rc/require 'proof-general)
-(add-hook 'coq-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "C-c C-q C-n")
-                            (quote proof-assert-until-point-interactive))))
+
 
 ;;; Nasm Mode
 (rc/require 'nasm-mode)
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . nasm-mode))
 
 ;;; LaTeX mode
-(add-hook 'tex-mode-hook
-          (lambda ()
-            (interactive)
-            (add-to-list 'tex-verbatim-environments "code")))
+
 
 ;;; Move Text
 (rc/require 'move-text)
@@ -308,10 +291,6 @@
      t)
     (goto-line saved-line-number)))
 
-(add-hook 'simpc-mode-hook
-          (lambda ()
-            (interactive)
-            (setq-local fill-paragraph-function 'astyle-buffer)))
 
 (require 'compile)
 
@@ -350,6 +329,5 @@ compilation-error-regexp-alist-alist
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
-(put 'downcase-region 'disabled nil)
-(setq shell-command-switch "-ic")
+)
+

@@ -135,6 +135,7 @@ bindsym $mod+o exec pavucontrol
 bindsym $mod+x exec i3-sensible-terminal -e rlwrap -n bluetoothctl
 bindsym $mod+i exec i3-sensible-terminal -e rlwrap -n iwctl
 bindsym $mod+t exec i3-sensible-terminal -e btop 
+bindsym $mod+Shift+s exec i3-sensible-terminal -e flameshot gui 
 
 bindsym --release $mod+Shift+l exec "slock"
 
@@ -145,6 +146,6 @@ exec_always --no-startup-id bash ~/.config/i3/autostart.sh
 
 gaps inner 20
 gaps outer 10
-#
+
 # Uncomment this for gaps if your using the i3-gaps fork
 for_window [class=".*"] border pixel 0
