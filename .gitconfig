@@ -1,6 +1,6 @@
 [user]
 	email = declan-combley@protonmail.com
-	name = declan  
+	name = declan
 [merge]
 	conflictStyle = diff3
 [magit]
