@@ -11,6 +11,11 @@
   (cond
    ((eq system-type 'gnu/linux) "Iosevka-20")))
 
+(custom-set-faces
+ '(default ((t (:family "Iosevka-20"))))
+  '(fixed-pitch ((t (:family "Iosevka-20"))))
+ )
+
 (add-to-list 'default-frame-alist `(font . ,(rc/get-default-font)))
 
 (tool-bar-mode 0)
@@ -329,5 +334,5 @@ compilation-error-regexp-alist-alist
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(markdown-inline-code-face ((t nil))))
 
