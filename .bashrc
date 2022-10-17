@@ -95,7 +95,7 @@ fi
 alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
 alias off='shutdown now'
-alias bat='cat /sys/class/power_supply/BAT0/capacity'
+alias bat='cat /sys/class/power_supply/BAT1/capacity'
 alias nat='~/dotfiles/.prog/cat'
 alias put='~/dotfiles/.prog/put'
 alias math='rlwrap -n python3 ~/dotfiles/.prog/main.py'
