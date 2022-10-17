@@ -12,9 +12,13 @@
    ((eq system-type 'gnu/linux) "Iosevka-20")))
 
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka-20"))))
-  '(fixed-pitch ((t (:family "Iosevka-20"))))
- )
+ '(fixed-pitch ((t (:family "Iosevka-20"))))
+ '(markdown-inline-code-face ((t nil))))
 
 (add-to-list 'default-frame-alist `(font . ,(rc/get-default-font)))
 
@@ -329,10 +333,5 @@ compilation-error-regexp-alist-alist
            (add-hook 'after-save-hook 'rc/autocommit-changes nil 'make-it-local))))
  '(whitespace-style
    '(face tabs spaces trailing space-before-tab newline indentation empty space-after-tab space-mark tab-mark)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(markdown-inline-code-face ((t nil))))
+
 
