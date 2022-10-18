@@ -45,6 +45,7 @@
 (global-set-key (kbd "C-x C-k") 'kill-buffer-and-window)
 
 (global-set-key (kbd "C-x t") 'shell-command)
+(global-set-key (kbd "C-c C-s") 'rectangle-mark-mode)
 (global-set-key (kbd "M-o") 'compile)
 
 (defun split-and-follow-horizontally ()
