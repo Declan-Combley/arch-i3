@@ -99,10 +99,9 @@ alias bat='cat /sys/class/power_supply/BAT1/capacity'
 alias nat='~/dotfiles/.prog/cat'
 alias put='~/dotfiles/.prog/put'
 alias math='rlwrap -n python3 ~/dotfiles/.prog/main.py'
-alias note='python3 ~/dotfiles/.prog/note/main.py'
+alias start-fans='sudo ~/dotfiles/scripts/asus-fans.sh'
+alias stop-fans='sudo ~/dotfiles/scripts/asus-fans-off.sh'
 
 export PS1="[ \[$(tput sgr0)\]\[\033[38;5;215m\]\w\[$(tput sgr0)\] ] \[$(tput sgr0)\]\[\033[38;5;215m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
-
-#[ -f "/home/declan/.ghcup/env" ] && source "/home/declan/.ghcup/env" # ghcup-env
 
 [ -f "/home/declan/.ghcup/env" ] && source "/home/declan/.ghcup/env" # ghcup-env
