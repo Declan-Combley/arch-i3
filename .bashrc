@@ -99,6 +99,8 @@ alias bat='cat /sys/class/power_supply/BAT1/capacity'
 alias start-fans='sudo ~/.dotfiles/scripts/asus-fans.sh'
 alias stop-fans='sudo ~/.dotfiles/scripts/asus-fans-off.sh'
 alias stress-test='stress -c 8 -t 30 -i 1 -m 1'
+alias mdlatex='(cd ~/Programming/mdlatex/ && make) && ~/Programming/mdlatex/ml'
+alias clean-latex='rm -rf *.tex *.log *.aux *.pdf'
 
 export PS1="[ \[$(tput sgr0)\]\[\033[38;5;215m\]\w\[$(tput sgr0)\] ] \[$(tput sgr0)\]\[\033[38;5;215m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
