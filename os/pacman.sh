@@ -7,6 +7,6 @@ git clone https://aur.archlinux.org/yay-git ~/.config/yay-git && (cd ~/.config/y
 yay -S picom-git
 yes | yay -S ttc-iosevka 
 
-sudo pacman -S man zsh tmux rxvt-unicode emacs polybar picom caja bluez bluez-utils pulseaudio-bluetooth unzip btop pavucontrol feh rlwrap evince flameshot man-pages noto-fonts noto-fonts-extra noto-fonts-cjk nyxt
+sudo pacman -S bitwarden man zsh tmux rxvt-unicode emacs polybar picom caja bluez bluez-utils pulseaudio-bluetooth unzip btop pavucontrol feh rlwrap evince flameshot man-pages noto-fonts noto-fonts-extra noto-fonts-cjk nyxt
 sudo pacman -Fy
 
